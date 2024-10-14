@@ -10,12 +10,28 @@
 
     <div class="row">
         <div class="col-lg-6">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary mb-3 tombolTambahData" data-bs-toggle="modal" data-bs-target="#formModal">
+            <button type="button" class="btn btn-primary tombolTambahData" data-bs-toggle="modal" data-bs-target="#formModal">
                 Tambah Data Mahasiswa
             </button>
-            <br>
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="col-lg-6 mt-3">
+            <form action="<?= BASEURL ?>/mahasiswa/cari" method="post">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="keyword" id="keyword" placeholder="Cari Mahasiswa.."
+                        aria-describedby="basic-addon2" autocomplete="off">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit" id="tombolCari">Cari</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
             <h3>Daftar Mahasiswa</h3>
 
             <ul class="list-group">
